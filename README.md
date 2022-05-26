@@ -1,4 +1,4 @@
-# CloufFormation Resource Identifiers
+# CloudFormation Resource Identifiers
 
 I was tired of passing string values as CDK resource type identifiers in my
 TypeScript projects, so I scraped AWS's docs and built a class-based typeset of
@@ -12,13 +12,13 @@ remains completely terrible.
 ### npm
 
 ```sh
-npm i --save-dev @boatlius/cdk-resource-names
+npm i --save-dev cloudformation-resources
 ```
 
 ### Yarn
 
 ```sh
-yarn add --dev @boatilus/cdk-resource-names
+yarn add --dev cloudformation-resources
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ In your CDK TypeScript files:
 
 ```typescript
 import { Template } from "aws-cdk-lib/assertions";
-import { AWS } from "@boatlius/cdk-resource-names";
+import { AWS } from "cloudformation-resources";
 
 const app = newApp("dev");
 const stack = new VpcStack(app, "vpc-stack", {});
@@ -39,7 +39,7 @@ template.resourceCountIs(AWS.EC2.VPC, 1); // instead of the wholly-gnarly "AWS::
 Alternatively, you can import just the service set:
 
 ```typescript
-import { EC2 } from "@boatilus/cdk-resource-names/ec2";
+import { EC2 } from "cloudformation-resources/ec2";
 
 const app = newApp("dev");
 const stack = new VpcStack(app, "vpc-stack", {});
