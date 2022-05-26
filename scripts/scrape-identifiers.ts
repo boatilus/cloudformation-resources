@@ -12,7 +12,7 @@ const servicePages = [
   { service: "EC2", page: "AWS_EC2.html" },
   { service: "ECR", page: "AWS_ECR.html" },
   { service: "ECS", page: "AWS_ECS.html" },
-  { service: "Events", page: "AWS_Events" },
+  { service: "Events", page: "AWS_Events.html" },
   { service: "IAM", page: "AWS_IAM.html" },
   { service: "KMS", page: "AWS_KMS.html" },
   { service: "Lambda", page: "AWS_Lambda.html" },
@@ -33,8 +33,7 @@ const serviceTemplate = `export class <%= it.service %> {
 }`;
 
 // Emits a /tests/{service}.test.ts file
-const testTemplate =
-  `import { assertEquals } from "https://deno.land/std@0.140.0/testing/asserts.ts";
+const testTemplate = `import { assertEquals } from "https://deno.land/std@0.140.0/testing/asserts.ts";
 import { <%= it.service %> } from "../<%= it.filename %>";
 
 Deno.test("<%= it.service %>", () => {
@@ -114,7 +113,7 @@ for (const sp of servicePages) {
     if (testRendered) {
       await Deno.writeTextFile(
         path.join("tests", `${filenameRoot}.test.ts`),
-        testRendered,
+        testRendered
       );
     }
 
