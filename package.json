@@ -1,7 +1,7 @@
 {
   "name": "cloudformation-resources",
   "description": "Typed CloudFormation resource names for safety and auto-completion",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "test": "deno test"
   },
