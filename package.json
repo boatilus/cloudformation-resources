@@ -1,7 +1,7 @@
 {
   "name": "cloudformation-resources",
   "description": "Typed CloudFormation resource names for safety and auto-completion",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
