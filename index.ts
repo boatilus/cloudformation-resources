@@ -1,17 +1,17 @@
-import { APIGateway } from "./apigateway/index.ts";
-import { CloudWatch } from "./cloudwatch/index.ts";
-import { DynamoDB } from "./dynamodb/index.ts";
-import { EC2 } from "./ec2/index.ts";
-import { ECR } from "./ecr/index.ts";
-import { ECS } from "./ecs/index.ts";
-import { Events } from "./events/index.ts";
-import { IAM } from "./iam/index.ts";
-import { KMS } from "./kms/index.ts";
-import { Lambda } from "./lambda/index.ts";
-import { Logs } from "./logs/index.ts";
-import { Route53 } from "./route53/index.ts";
-import { S3 } from "./s3/index.ts";
-import { SQS } from "./sqs/index.ts";
+import { APIGateway } from "./apigateway";
+import { CloudWatch } from "./cloudwatch";
+import { DynamoDB } from "./dynamodb";
+import { EC2 } from "./ec2";
+import { ECR } from "./ecr";
+import { ECS } from "./ecs";
+import { Events } from "./events";
+import { IAM } from "./iam";
+import { KMS } from "./kms";
+import { Lambda } from "./lambda";
+import { Logs } from "./logs";
+import { Route53 } from "./route53";
+import { S3 } from "./s3";
+import { SQS } from "./sqs";
 
 export class AWS {
   static APIGateway = APIGateway;
