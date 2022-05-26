@@ -1,7 +1,9 @@
 {
   "name": "cloudformation-resources",
   "description": "Typed CloudFormation resource names for safety and auto-completion",
-  "version": "1.0.0",
+  "version": "1.2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "deno test"
   },
@@ -19,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/boatilus/cloudformation-resources/issues"
   },
-  "homepage": "https://github.com/boatilus/cloudformation-resources"
+  "homepage": "https://github.com/boatilus/cloudformation-resources",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
 }
