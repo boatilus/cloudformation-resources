@@ -1,0 +1,30 @@
+import { APIGateway } from "./apigateway";
+import { CloudWatch } from "./cloudwatch";
+import { DynamoDB } from "./dynamodb";
+import { EC2 } from "./ec2";
+import { ECR } from "./ecr";
+import { ECS } from "./ecs";
+import { Events } from "./events";
+import { IAM } from "./iam";
+import { KMS } from "./kms";
+import { Lambda } from "./lambda";
+import { Logs } from "./logs";
+import { Route53 } from "./route53";
+import { S3 } from "./s3";
+import { SQS } from "./sqs";
+export class AWS {
+}
+AWS.APIGateway = APIGateway;
+AWS.CloudWatch = CloudWatch;
+AWS.DynamoDB = DynamoDB;
+AWS.EC2 = EC2;
+AWS.ECR = ECR;
+AWS.ECS = ECS;
+AWS.Events = Events;
+AWS.IAM = IAM;
+AWS.KMS = KMS;
+AWS.Lambda = Lambda;
+AWS.Logs = Logs;
+AWS.Route53 = Route53;
+AWS.S3 = S3;
+AWS.SQS = SQS;
