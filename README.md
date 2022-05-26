@@ -1,4 +1,4 @@
-# AWS CDK Resource Type Identifiers
+# CloufFormation Resource Identifiers
 
 I was tired of passing string values as CDK resource type identifiers in my
 TypeScript projects, so I scraped AWS's docs and built a class-based typeset of
