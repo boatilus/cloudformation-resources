@@ -28,7 +28,7 @@ const listClass = "itemizedlist";
 // Emits a /{service}/index.ts file
 const serviceTemplate = `export class <%= it.service %> {
 <% it.names.forEach(function(name){ %>
-  static <%= name %> = "AWS::<%= it.service %>::<%= name %>"
+  static <%= name %> = "AWS::<%= it.service %>::<%= name %>";
 <% }) %>
 }`;
 
@@ -37,9 +37,9 @@ const testTemplate =
   `import { assertEquals } from "https://deno.land/std@0.140.0/testing/asserts.ts"
 import { <%= it.service %> } from "./<%= it.filename %>"
 
-Deno.test('<%= it.service %>', () => {
+Deno.test("<%= it.service %>", () => {
 <% it.names.forEach(function(name){ %>
-  assertEquals(<%= it.service %>.<%= name %>, "AWS::<%= it.service %>::<%= name %>")
+  assertEquals(<%= it.service %>.<%= name %>, "AWS::<%= it.service %>::<%= name %>");
 <% }) %>
 })`;
 
@@ -50,7 +50,7 @@ import { <%= service.name %> } from "./services/<%= service.filename %>"
 
 export class AWS {
 <% it.joined.forEach(function(service){ %>
-  static <%= service.name %> = <%= service.name %>
+  static <%= service.name %> = <%= service.name %>;
 
 <% }) %>
 }`;
@@ -141,4 +141,20 @@ const indexRendered = await eta.render(indexTemplate, {
 
 if (indexRendered) {
   await Deno.writeTextFile(path.join("mod.ts"), indexRendered);
+}
+
+// Run deno fmt
+const command = new Deno.Command(Deno.execPath(), {
+  args: [
+    "fmt",
+    "services/",
+    "mod.ts",
+  ],
+});
+
+// create subprocess and collect output
+const { code, stderr } = await command.output();
+if (code !== 0) {
+  console.error(`deno fmt exited with: ${code}`);
+  console.error(new TextDecoder().decode(stderr));
 }
