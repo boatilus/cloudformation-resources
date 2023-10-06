@@ -63,4 +63,5 @@ deno run --allow-net --allow-write --allow-read scripts/scrape-identifiers.ts
 Pull requests are welcome. To add services, add them to `servicePages` in
 `scripts/scrape-identifiers.ts`, then run the build command.
 
-> **NOTE**: Be sure to run `deno fmt` before committing to ensure consistent formatting.
+> [!IMPORTANT] Be sure to run `deno fmt` before committing to ensure consistent
+> formatting.
