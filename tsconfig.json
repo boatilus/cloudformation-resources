@@ -7,5 +7,10 @@
     "outDir": "dist",
     "strict": true,
   },
-  "exclude": ["node_modules", "dist", "src/tests", "src/scripts"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/tests",
+    "src/scripts"
+  ]
 }
