@@ -6,7 +6,7 @@ const basePath =
   "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide";
 
 const servicePages = [
-  { service: "APIGateway", page: "AWS_ApiGateway.html" },
+  { service: "ApiGateway", page: "AWS_ApiGateway.html" },
   { service: "CloudWatch", page: "AWS_CloudWatch.html" },
   { service: "DynamoDB", page: "AWS_DynamoDB.html" },
   { service: "EC2", page: "AWS_EC2.html" },

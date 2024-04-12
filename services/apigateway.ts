@@ -1,21 +1,21 @@
-export class APIGateway {
-  static Account = "AWS::APIGateway::Account";
-  static ApiKey = "AWS::APIGateway::ApiKey";
-  static Authorizer = "AWS::APIGateway::Authorizer";
-  static BasePathMapping = "AWS::APIGateway::BasePathMapping";
-  static ClientCertificate = "AWS::APIGateway::ClientCertificate";
-  static Deployment = "AWS::APIGateway::Deployment";
-  static DocumentationPart = "AWS::APIGateway::DocumentationPart";
-  static DocumentationVersion = "AWS::APIGateway::DocumentationVersion";
-  static DomainName = "AWS::APIGateway::DomainName";
-  static GatewayResponse = "AWS::APIGateway::GatewayResponse";
-  static Method = "AWS::APIGateway::Method";
-  static Model = "AWS::APIGateway::Model";
-  static RequestValidator = "AWS::APIGateway::RequestValidator";
-  static Resource = "AWS::APIGateway::Resource";
-  static RestApi = "AWS::APIGateway::RestApi";
-  static Stage = "AWS::APIGateway::Stage";
-  static UsagePlan = "AWS::APIGateway::UsagePlan";
-  static UsagePlanKey = "AWS::APIGateway::UsagePlanKey";
-  static VpcLink = "AWS::APIGateway::VpcLink";
+export class ApiGateway {
+  static Account = "AWS::ApiGateway::Account";
+  static ApiKey = "AWS::ApiGateway::ApiKey";
+  static Authorizer = "AWS::ApiGateway::Authorizer";
+  static BasePathMapping = "AWS::ApiGateway::BasePathMapping";
+  static ClientCertificate = "AWS::ApiGateway::ClientCertificate";
+  static Deployment = "AWS::ApiGateway::Deployment";
+  static DocumentationPart = "AWS::ApiGateway::DocumentationPart";
+  static DocumentationVersion = "AWS::ApiGateway::DocumentationVersion";
+  static DomainName = "AWS::ApiGateway::DomainName";
+  static GatewayResponse = "AWS::ApiGateway::GatewayResponse";
+  static Method = "AWS::ApiGateway::Method";
+  static Model = "AWS::ApiGateway::Model";
+  static RequestValidator = "AWS::ApiGateway::RequestValidator";
+  static Resource = "AWS::ApiGateway::Resource";
+  static RestApi = "AWS::ApiGateway::RestApi";
+  static Stage = "AWS::ApiGateway::Stage";
+  static UsagePlan = "AWS::ApiGateway::UsagePlan";
+  static UsagePlanKey = "AWS::ApiGateway::UsagePlanKey";
+  static VpcLink = "AWS::ApiGateway::VpcLink";
 }
