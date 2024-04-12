@@ -101,6 +101,10 @@ Deno.test("EC2", () => {
   assertEquals(EC2.SecurityGroup, "AWS::EC2::SecurityGroup");
   assertEquals(EC2.SecurityGroupEgress, "AWS::EC2::SecurityGroupEgress");
   assertEquals(EC2.SecurityGroupIngress, "AWS::EC2::SecurityGroupIngress");
+  assertEquals(
+    EC2.SnapshotBlockPublicAccess,
+    "AWS::EC2::SnapshotBlockPublicAccess",
+  );
   assertEquals(EC2.SpotFleet, "AWS::EC2::SpotFleet");
   assertEquals(EC2.Subnet, "AWS::EC2::Subnet");
   assertEquals(EC2.SubnetCidrBlock, "AWS::EC2::SubnetCidrBlock");

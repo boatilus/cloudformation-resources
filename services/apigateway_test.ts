@@ -1,36 +1,36 @@
 import { assertEquals } from "https://deno.land/std@0.140.0/testing/asserts.ts";
-import { APIGateway } from "./apigateway.ts";
+import { ApiGateway } from "./apigateway.ts";
 
-Deno.test("APIGateway", () => {
-  assertEquals(APIGateway.Account, "AWS::APIGateway::Account");
-  assertEquals(APIGateway.ApiKey, "AWS::APIGateway::ApiKey");
-  assertEquals(APIGateway.Authorizer, "AWS::APIGateway::Authorizer");
-  assertEquals(APIGateway.BasePathMapping, "AWS::APIGateway::BasePathMapping");
+Deno.test("ApiGateway", () => {
+  assertEquals(ApiGateway.Account, "AWS::ApiGateway::Account");
+  assertEquals(ApiGateway.ApiKey, "AWS::ApiGateway::ApiKey");
+  assertEquals(ApiGateway.Authorizer, "AWS::ApiGateway::Authorizer");
+  assertEquals(ApiGateway.BasePathMapping, "AWS::ApiGateway::BasePathMapping");
   assertEquals(
-    APIGateway.ClientCertificate,
-    "AWS::APIGateway::ClientCertificate",
+    ApiGateway.ClientCertificate,
+    "AWS::ApiGateway::ClientCertificate",
   );
-  assertEquals(APIGateway.Deployment, "AWS::APIGateway::Deployment");
+  assertEquals(ApiGateway.Deployment, "AWS::ApiGateway::Deployment");
   assertEquals(
-    APIGateway.DocumentationPart,
-    "AWS::APIGateway::DocumentationPart",
+    ApiGateway.DocumentationPart,
+    "AWS::ApiGateway::DocumentationPart",
   );
   assertEquals(
-    APIGateway.DocumentationVersion,
-    "AWS::APIGateway::DocumentationVersion",
+    ApiGateway.DocumentationVersion,
+    "AWS::ApiGateway::DocumentationVersion",
   );
-  assertEquals(APIGateway.DomainName, "AWS::APIGateway::DomainName");
-  assertEquals(APIGateway.GatewayResponse, "AWS::APIGateway::GatewayResponse");
-  assertEquals(APIGateway.Method, "AWS::APIGateway::Method");
-  assertEquals(APIGateway.Model, "AWS::APIGateway::Model");
+  assertEquals(ApiGateway.DomainName, "AWS::ApiGateway::DomainName");
+  assertEquals(ApiGateway.GatewayResponse, "AWS::ApiGateway::GatewayResponse");
+  assertEquals(ApiGateway.Method, "AWS::ApiGateway::Method");
+  assertEquals(ApiGateway.Model, "AWS::ApiGateway::Model");
   assertEquals(
-    APIGateway.RequestValidator,
-    "AWS::APIGateway::RequestValidator",
+    ApiGateway.RequestValidator,
+    "AWS::ApiGateway::RequestValidator",
   );
-  assertEquals(APIGateway.Resource, "AWS::APIGateway::Resource");
-  assertEquals(APIGateway.RestApi, "AWS::APIGateway::RestApi");
-  assertEquals(APIGateway.Stage, "AWS::APIGateway::Stage");
-  assertEquals(APIGateway.UsagePlan, "AWS::APIGateway::UsagePlan");
-  assertEquals(APIGateway.UsagePlanKey, "AWS::APIGateway::UsagePlanKey");
-  assertEquals(APIGateway.VpcLink, "AWS::APIGateway::VpcLink");
+  assertEquals(ApiGateway.Resource, "AWS::ApiGateway::Resource");
+  assertEquals(ApiGateway.RestApi, "AWS::ApiGateway::RestApi");
+  assertEquals(ApiGateway.Stage, "AWS::ApiGateway::Stage");
+  assertEquals(ApiGateway.UsagePlan, "AWS::ApiGateway::UsagePlan");
+  assertEquals(ApiGateway.UsagePlanKey, "AWS::ApiGateway::UsagePlanKey");
+  assertEquals(ApiGateway.VpcLink, "AWS::ApiGateway::VpcLink");
 });

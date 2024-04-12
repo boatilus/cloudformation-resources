@@ -1,4 +1,4 @@
-import { APIGateway } from "./services/apigateway.ts";
+import { ApiGateway } from "./services/apigateway.ts";
 import { CloudWatch } from "./services/cloudwatch.ts";
 import { DynamoDB } from "./services/dynamodb.ts";
 import { EC2 } from "./services/ec2.ts";
@@ -14,7 +14,7 @@ import { S3 } from "./services/s3.ts";
 import { SQS } from "./services/sqs.ts";
 
 export class AWS {
-  static APIGateway = APIGateway;
+  static ApiGateway = ApiGateway;
 
   static CloudWatch = CloudWatch;
 
