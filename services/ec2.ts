@@ -58,6 +58,7 @@ export class EC2 {
   static SecurityGroup = "AWS::EC2::SecurityGroup";
   static SecurityGroupEgress = "AWS::EC2::SecurityGroupEgress";
   static SecurityGroupIngress = "AWS::EC2::SecurityGroupIngress";
+  static SnapshotBlockPublicAccess = "AWS::EC2::SnapshotBlockPublicAccess";
   static SpotFleet = "AWS::EC2::SpotFleet";
   static Subnet = "AWS::EC2::Subnet";
   static SubnetCidrBlock = "AWS::EC2::SubnetCidrBlock";
